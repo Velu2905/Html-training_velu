@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add task</title>
+</head>
+<body>
+    <li><a href="Home page.html">Home page</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Add task.html">Add task</a></li>
+            <li><a href="Task list.html">Task list</a></li>
+    <h3>Add task</h3>
+    <form action="Task list.html">
+        <label for="Task name">Task name(*)</label>
+       <input type="text"name="task name"id="task name"required><br>
+        <label for="description">description</label>
+        <textarea name="description"id="description"cols="30"rows="3"></textarea>
+            <br>
+        <label for="Due date">Due date</label>
+        <input type="date"name="Due date" id="Due date"value="2020-10-20" min="2020-10-20" max="2021-10-20">
+
+        <select id="dueTime">
+            <option value="" disabled>---SELECT Time --</option>
+            <option value="11:00:00">11 AM</option>
+            <option value="15:00:00">3 PM</option>
+        </select>
+        <br>
+
+    <label for="Priority">Priority</label>
+                <select id="priority"required>
+            <option value="Choose" disabled > Choose</option>
+            <option value="low"></option>
+            <option value="low">Low</option>
+            <option value=",medium">Medium</option>
+            <option value="high">High</option>
+            </select>
+
+
+        <button type="submit">submit</button>
+            <button type="reset">reset</button>
+    </form>
+</body>
+</html>
